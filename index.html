@@ -104,6 +104,8 @@ img,canvas,svg,video{max-width:100%}
 
 
 
+
+
 /* --- rework additions --- */
 @keyframes hzn-sunglow{0%,100%{opacity:0.78;filter:brightness(0.9)}50%{opacity:1;filter:brightness(1.28)}}
 @keyframes hzn-sweep{0%{transform:translateX(-120%)}55%,100%{transform:translateX(360%)}}
@@ -123,6 +125,7 @@ img,canvas,svg,video{max-width:100%}
   <div data-anim style="position:fixed;top:-24%;left:-16%;width:72vw;height:72vw;z-index:0;pointer-events:none;border-radius:50%;opacity:var(--neb,0.7);background:radial-gradient(circle at 50% 50%, rgba(96,116,178,0.18), rgba(96,116,178,0.05) 40%, transparent 66%);filter:blur(34px);animation:hzn-neb1 46s ease-in-out infinite;"></div>
   <div data-anim style="position:fixed;top:14%;right:-22%;width:82vw;height:82vw;z-index:0;pointer-events:none;border-radius:50%;opacity:var(--neb,0.7);background:radial-gradient(circle at 50% 50%, rgba(128,104,176,0.15), rgba(128,104,176,0.045) 42%, transparent 68%);filter:blur(42px);animation:hzn-neb2 60s ease-in-out infinite;"></div>
   <div data-anim style="position:fixed;bottom:-28%;left:16%;width:78vw;height:78vw;z-index:0;pointer-events:none;border-radius:50%;opacity:var(--neb,0.7);background:radial-gradient(circle at 50% 50%, rgba(90,142,166,0.13), rgba(90,142,166,0.04) 44%, transparent 68%);filter:blur(38px);animation:hzn-neb3 54s ease-in-out infinite;"></div>
+  <canvas id="hzn-nebula" style="position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
   <canvas id="hzn-stars" style="position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
   <div style="position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(118% 92% at 50% 42%, transparent 40%, rgba(2,3,7,0.5) 100%);"></div>
   <div data-anim style="position:fixed;inset:-14%;z-index:70;pointer-events:none;opacity:var(--grain,0.12);mix-blend-mode:soft-light;background-size:200px 200px;background-image:url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27160%27 height=%27160%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.8%27 numOctaves=%272%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27160%27 height=%27160%27 filter=%27url(%23n)%27/%3E%3C/svg%3E');animation:hzn-grain 1.1s steps(5) infinite;"></div>
@@ -287,6 +290,8 @@ img,canvas,svg,video{max-width:100%}
 
 </div>
 <script>
+
+
 
 
 
@@ -757,6 +762,107 @@ else window.__hznBoot();
 document.addEventListener('click',function(e){var b=e.target.closest('[role="tab"]');if(!b)return;var tl=b.closest('[role="tablist"]');if(tl)tl.querySelectorAll('[role="tab"]').forEach(function(t){t.setAttribute('aria-selected',t===b?'true':'false');});});
 /* hero: rotating live prompt */
 (function(){var el=document.getElementById('hzn-rotor');if(!el)return;var q=["Which invoices are overdue this week?","How did last month's ad spend really perform?","Follow up with every lead that went quiet.","Which products are about to stock out?","Book the VIP a table for Friday at 8.","Which accounts look about to churn?"];var i=0;var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduce)return;setInterval(function(){el.style.opacity='0';setTimeout(function(){i=(i+1)%q.length;el.textContent='\u201C'+q[i]+'\u201D';el.style.opacity='1';},450);},3400);})();
+/* deep-space nebula (WebGL) */
+/* HORIZON — interactive deep-space nebula (WebGL, subtle). Falls back to CSS blobs if unavailable. */
+(function(){
+  var cv = document.getElementById('hzn-nebula');
+  if (!cv) return;
+  var gl = null;
+  try { gl = cv.getContext('webgl', {antialias:false, alpha:true, depth:false, premultipliedAlpha:false})
+             || cv.getContext('experimental-webgl'); } catch(e) {}
+  if (!gl) return; // no WebGL -> keep the CSS nebula blobs
+
+  var VS = 'attribute vec2 a;void main(){gl_Position=vec4(a,0.0,1.0);}';
+  var FS = [
+    'precision highp float;',
+    'uniform vec2 uRes;uniform float uTime;uniform vec2 uMouse;uniform float uBloom;uniform float uInt;uniform float uScroll;',
+    'float hash(vec2 p){p=fract(p*vec2(127.1,311.7));p+=dot(p,p+45.32);return fract(p.x*p.y);}',
+    'float vnoise(vec2 p){vec2 i=floor(p),f=fract(p);vec2 u=f*f*(3.0-2.0*f);',
+    ' return mix(mix(hash(i),hash(i+vec2(1.,0.)),u.x),mix(hash(i+vec2(0.,1.)),hash(i+vec2(1.,1.)),u.x),u.y);}',
+    'float fbm(vec2 p){float v=0.0,a=0.55;mat2 m=mat2(1.6,1.2,-1.2,1.6);',
+    ' for(int i=0;i<6;i++){v+=a*vnoise(p);p=m*p+0.03;a*=0.5;}return v;}',
+    'void main(){',
+    ' vec2 uv=gl_FragCoord.xy/uRes.xy;',
+    ' vec2 p=(gl_FragCoord.xy-0.5*uRes.xy)/uRes.y;',
+    ' float t=uTime*0.012;',
+    ' p*=1.15;',
+    ' p+=(uMouse-0.5)*0.10;',            // mouse parallax
+    ' p.y+=uScroll*0.22;',               // slow scroll drift
+    ' vec2 q=vec2(fbm(p+vec2(0.0,t)),fbm(p+vec2(4.3,-t*0.8)));',
+    ' vec2 r=vec2(fbm(p+2.4*q+vec2(1.7,9.2)),fbm(p+2.4*q+vec2(8.3,2.8)));',
+    ' float d=fbm(p+2.0*r);',
+    ' d=smoothstep(0.30,0.93,d);',       // clouds only in dense zones
+    ' vec3 col=vec3(0.05,0.06,0.13);',
+    ' col=mix(col,vec3(0.11,0.09,0.19),smoothstep(0.18,0.68,d));',      // violet mid
+    ' col=mix(col,vec3(0.20,0.26,0.44),smoothstep(0.55,1.0,d)*0.92);',  // blue highlight
+    ' float teal=smoothstep(0.45,0.85,fbm(p*1.7+r-t*0.6));',
+    ' col+=vec3(0.015,0.045,0.05)*teal*d;',
+    ' col*=d;',                          // nebula emerges from black
+    ' float md=distance(uv,uMouse);',
+    ' col+=smoothstep(0.32,0.0,md)*uBloom*(0.25+0.6*d)*vec3(0.10,0.13,0.22);', // cursor bloom
+    ' float vig=smoothstep(1.28,0.30,length(p*vec2(0.85,1.0)));',       // edge vignette
+    ' col*=vig*uInt;',
+    ' gl_FragColor=vec4(col,1.0);',
+    '}'
+  ].join('\n');
+
+  function sh(type, src){ var s=gl.createShader(type); gl.shaderSource(s,src); gl.compileShader(s);
+    if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)){ console.error('nebula shader:', gl.getShaderInfoLog(s)); return null; } return s; }
+  var vs=sh(gl.VERTEX_SHADER,VS), fs=sh(gl.FRAGMENT_SHADER,FS);
+  if(!vs||!fs) return;
+  var prog=gl.createProgram(); gl.attachShader(prog,vs); gl.attachShader(prog,fs); gl.linkProgram(prog);
+  if(!gl.getProgramParameter(prog,gl.LINK_STATUS)){ console.error('nebula link:', gl.getProgramInfoLog(prog)); return; }
+  gl.useProgram(prog);
+
+  var buf=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1, 3,-1, -1,3]),gl.STATIC_DRAW);
+  var loc=gl.getAttribLocation(prog,'a'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+
+  var uRes=gl.getUniformLocation(prog,'uRes'), uTime=gl.getUniformLocation(prog,'uTime'),
+      uMouse=gl.getUniformLocation(prog,'uMouse'), uBloom=gl.getUniformLocation(prog,'uBloom'),
+      uInt=gl.getUniformLocation(prog,'uInt'), uScroll=gl.getUniformLocation(prog,'uScroll');
+
+  function resize(){ var s=(window.innerWidth<640?0.4:0.55);
+    cv.width=Math.max(2,Math.floor(window.innerWidth*s));
+    cv.height=Math.max(2,Math.floor(window.innerHeight*s));
+    gl.viewport(0,0,cv.width,cv.height); }
+  resize(); window.addEventListener('resize', resize, {passive:true});
+
+  // WebGL is active -> retire the CSS nebula blobs to avoid double-nebula muddiness
+  [].forEach.call(document.querySelectorAll('[style*="hzn-neb"]'), function(el){ el.style.opacity='0'; el.style.display='none'; });
+
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var INT = 0.98;
+  var mx=0.5,my=0.62, tmx=0.5,tmy=0.62, bloom=0, tbloom=0, start=null;
+
+  function draw(t, mouseX, mouseY, bl, scroll){
+    gl.uniform2f(uRes, cv.width, cv.height);
+    gl.uniform1f(uTime, t);
+    gl.uniform2f(uMouse, mouseX, mouseY);
+    gl.uniform1f(uBloom, bl);
+    gl.uniform1f(uInt, INT);
+    gl.uniform1f(uScroll, scroll);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+
+  if (reduce){ draw(0.0, 0.5, 0.6, 0.0, 0.0); return; } // static frame, no loop/interaction
+
+  window.addEventListener('mousemove', function(e){
+    tmx=e.clientX/window.innerWidth; tmy=1.0-e.clientY/window.innerHeight; tbloom=1.0;
+  }, {passive:true});
+
+  function frame(now){
+    requestAnimationFrame(frame);
+    if(document.hidden) return;
+    if(start===null) start=now;
+    mx+=(tmx-mx)*0.05; my+=(tmy-my)*0.05; tbloom*=0.955; bloom+=(tbloom-bloom)*0.08;
+    var docH=document.documentElement.scrollHeight-window.innerHeight;
+    var sc=docH>0 ? (window.scrollY||window.pageYOffset||0)/docH : 0;
+    draw((now-start)*0.001, mx, my, bloom, sc);
+  }
+  requestAnimationFrame(frame);
+})();
+
 </script>
 </body>
 </html>
