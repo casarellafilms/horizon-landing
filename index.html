@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HORIZON — The AI Brain Behind Your Business</title>
+<meta name="description" content="HORIZON builds the AI Brain that runs your sales, marketing, content and operations — one system, trained on your data, proven with numbers. AI-native business consulting built for the American market.">
+<meta name="theme-color" content="#04050A">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://horizon-landing.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HORIZON — The AI Brain Behind Your Business">
+<meta property="og:description" content="One intelligence layer that runs sales, marketing, content and operations — trained on your data, proven with numbers.">
+<meta property="og:site_name" content="HORIZON">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HORIZON — The AI Brain Behind Your Business">
+<meta name="twitter:description" content="AI-native business consulting built for the American market. Depth beats volume.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2304050A'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23F6F7FB' stroke-opacity='.85'/%3E%3Cline x1='4' y1='17' x2='28' y2='17' stroke='%23F6F7FB' stroke-opacity='.7'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23F6F7FB'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#04050A;color:rgba(246,247,251,0.92);font-family:'Space Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:rgba(246,247,251,0.18);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#04050A}
+::-webkit-scrollbar-thumb{background:rgba(246,247,251,0.12);border-radius:10px;border:2px solid #04050A}
+::-webkit-scrollbar-thumb:hover{background:rgba(246,247,251,0.22)}
+@keyframes hzn-pulse{0%,100%{filter:brightness(0.8)}50%{filter:brightness(1.25)}}
+@keyframes hzn-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes hzn-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes hzn-spin{to{transform:rotate(360deg)}}
+@keyframes hzn-shimmer{0%{background-position:-180% 0}100%{background-position:180% 0}}
+@keyframes hzn-cue{0%{transform:translateY(-6px);opacity:0}50%{opacity:1}100%{transform:translateY(10px);opacity:0}}
+@keyframes hzn-neb1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(4%,-3%) scale(1.09)}}
+@keyframes hzn-neb2{0%,100%{transform:translate(0,0) scale(1.06)}50%{transform:translate(-5%,4%) scale(1)}}
+@keyframes hzn-neb3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(3%,5%) scale(1.12)}}
+@keyframes hzn-grain{0%{transform:translate(0,0)}20%{transform:translate(-5%,3%)}40%{transform:translate(4%,-6%)}60%{transform:translate(-3%,5%)}80%{transform:translate(5%,-2%)}100%{transform:translate(0,0)}}
+@media (prefers-reduced-motion: reduce){[data-anim]{animation:none !important}}
+@property --rot{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes hzn-rot{to{--rot:360deg}}
+@media (max-width:860px){#hzn-nav [data-navlinks]{display:none !important}#hzn-nav [data-navtoggle]{display:inline-flex !important}}
+@media (max-width:640px){[data-flag]{grid-column:auto !important}#hzn-root section{padding-left:20px !important;padding-right:20px !important}}
+/* --- generated hover / focus states (were style-hover / style-focus) --- */
+.hzh0:hover{color:#F6F7FB !important}
+.hzh1:hover{color:#F6F7FB !important}
+.hzh2:hover{color:#F6F7FB !important}
+.hzh3:hover{transform:translateY(-1px) !important;border-color:rgba(246,247,251,0.42) !important;background:rgba(246,247,251,0.06) !important}
+.hzh4:hover{background:rgba(246,247,251,0.06) !important}
+.hzh5:hover{background:rgba(246,247,251,0.06) !important}
+.hzh6:hover{background:rgba(246,247,251,0.06) !important}
+.hzh7:hover{transform:translateY(-2px) !important;filter:brightness(1.04) !important}
+.hzh8:hover{transform:translateY(-2px) !important;border-color:rgba(246,247,251,0.4) !important;background:rgba(246,247,251,0.06) !important}
+.hzh9:hover{transform:translateY(-6px) !important;border-color:rgba(246,247,251,0.24) !important}
+.hzh10:hover{transform:translateY(-6px) !important;border-color:rgba(246,247,251,0.24) !important}
+.hzh11:hover{transform:translateY(-6px) !important;border-color:rgba(246,247,251,0.24) !important}
+.hzh12:hover{transform:translateY(-6px) !important;border-color:rgba(246,247,251,0.24) !important}
+.hzh13:hover{transform:translateY(-6px) !important;border-color:rgba(246,247,251,0.24) !important}
+.hzh14:hover{transform:translateY(-6px) !important;border-color:rgba(246,247,251,0.24) !important}
+.hzh15:hover{transform:translateY(-6px) !important;border-color:rgba(246,247,251,0.24) !important}
+.hzf16:focus{border-color:rgba(246,247,251,0.5) !important;box-shadow:0 0 0 3px rgba(246,247,251,0.08) !important;background:rgba(246,247,251,0.05) !important}
+.hzh17:hover{filter:brightness(1.04) !important}
+.hzh18:hover{transform:translateY(-2px) !important;filter:brightness(1.04) !important}
+.hzh19:hover{border-color:rgba(246,247,251,0.4) !important;color:#F6F7FB !important}
+.hzh20:hover{border-color:rgba(246,247,251,0.4) !important;color:#F6F7FB !important}
+.hzh21:hover{border-color:rgba(246,247,251,0.4) !important;color:#F6F7FB !important}
+.hzh22:hover{color:#F6F7FB !important}
+.hzh23:hover{color:#F6F7FB !important}
+.hzh24:hover{color:#F6F7FB !important}
+.hzh25:hover{border-color:rgba(246,247,251,0.4) !important;color:#F6F7FB !important}
+.hzf26:focus{border-color:rgba(246,247,251,0.5) !important;box-shadow:0 0 0 3px rgba(246,247,251,0.08) !important}
+.hzh27:hover{filter:brightness(1.04) !important}
+/* --- responsive hardening (deploy build) --- */
+#hzn-nav [data-action="open-modal"]{white-space:nowrap}
+@media (max-width:560px){
+  #hzn-nav [data-action="open-modal"]{display:none !important}
+  #hzn-navmenu [data-action="open-modal"]{display:inline-flex !important}
+}
+img,canvas,svg,video{max-width:100%}
+</style>
+</head>
+<body>
+<div id="hzn-root" style="position:relative;min-height:100vh;background:#04050A;--glass-blur:24px;--glow:0.7;--neb:0.7;--grain:0.12;">
+
+  <div id="hzn-progress" style="position:fixed;top:0;left:0;height:2px;width:0;z-index:80;background:linear-gradient(90deg,rgba(246,247,251,0.25),#ffffff);box-shadow:0 0 12px 1px rgba(246,247,251,0.6);pointer-events:none;transition:width .12s linear;"></div>
+
+  <div style="position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(130% 80% at 50% -14%, rgba(110,130,190,0.09), transparent 52%),radial-gradient(120% 60% at 50% 120%, rgba(150,170,225,0.07), transparent 58%);"></div>
+  <div data-anim style="position:fixed;top:-24%;left:-16%;width:72vw;height:72vw;z-index:0;pointer-events:none;border-radius:50%;opacity:var(--neb,0.7);background:radial-gradient(circle at 50% 50%, rgba(96,116,178,0.18), rgba(96,116,178,0.05) 40%, transparent 66%);filter:blur(34px);animation:hzn-neb1 46s ease-in-out infinite;"></div>
+  <div data-anim style="position:fixed;top:14%;right:-22%;width:82vw;height:82vw;z-index:0;pointer-events:none;border-radius:50%;opacity:var(--neb,0.7);background:radial-gradient(circle at 50% 50%, rgba(128,104,176,0.15), rgba(128,104,176,0.045) 42%, transparent 68%);filter:blur(42px);animation:hzn-neb2 60s ease-in-out infinite;"></div>
+  <div data-anim style="position:fixed;bottom:-28%;left:16%;width:78vw;height:78vw;z-index:0;pointer-events:none;border-radius:50%;opacity:var(--neb,0.7);background:radial-gradient(circle at 50% 50%, rgba(90,142,166,0.13), rgba(90,142,166,0.04) 44%, transparent 68%);filter:blur(38px);animation:hzn-neb3 54s ease-in-out infinite;"></div>
+  <canvas id="hzn-stars" style="position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+  <div style="position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(118% 92% at 50% 42%, transparent 40%, rgba(2,3,7,0.5) 100%);"></div>
+  <div data-anim style="position:fixed;inset:-14%;z-index:70;pointer-events:none;opacity:var(--grain,0.12);mix-blend-mode:soft-light;background-size:200px 200px;background-image:url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27160%27 height=%27160%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.8%27 numOctaves=%272%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27160%27 height=%27160%27 filter=%27url(%23n)%27/%3E%3C/svg%3E');animation:hzn-grain 1.1s steps(5) infinite;"></div>
+
+  <nav id="hzn-nav" style="position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px clamp(22px,7vw,140px);border-bottom:1px solid transparent;transition:background .5s,border-color .5s,padding .5s,backdrop-filter .5s;">
+    <a href="#cover" style="display:flex;align-items:center;gap:13px;text-decoration:none;">
+      <span style="position:relative;display:inline-flex;width:24px;height:24px;flex:none;align-items:center;justify-content:center;">
+        <span style="position:absolute;inset:0;border-radius:50%;border:1px solid rgba(246,247,251,0.3);"></span>
+        <span style="position:absolute;left:2px;right:2px;top:11px;height:1px;background:linear-gradient(90deg,transparent,rgba(246,247,251,0.75),transparent);"></span>
+        <span data-anim style="width:7px;height:7px;border-radius:50%;background:#F6F7FB;box-shadow:0 0 12px 2px rgba(246,247,251,0.9);animation:hzn-pulse 6s ease-in-out infinite;"></span>
+      </span>
+      <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:22px;letter-spacing:.34em;color:#F6F7FB;padding-left:.34em;">HORIZON</span>
+    </a>
+    <div data-navlinks style="display:flex;align-items:center;gap:38px;">
+      <a class="hzh0" href="#brain" style="font:500 13px 'Space Grotesk',sans-serif;letter-spacing:.02em;color:rgba(246,247,251,0.55);text-decoration:none;transition:color .3s;">The Brain</a>
+      <a class="hzh1" href="#method" style="font:500 13px 'Space Grotesk',sans-serif;letter-spacing:.02em;color:rgba(246,247,251,0.55);text-decoration:none;transition:color .3s;">Method</a>
+      <a class="hzh2" href="#results" style="font:500 13px 'Space Grotesk',sans-serif;letter-spacing:.02em;color:rgba(246,247,251,0.55);text-decoration:none;transition:color .3s;">Results</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <button data-action="navmenu" data-navtoggle aria-label="Menu" style="display:none;width:42px;height:42px;align-items:center;justify-content:center;flex-direction:column;gap:5px;border:1px solid rgba(246,247,251,0.2);border-radius:12px;background:rgba(246,247,251,0.03);cursor:pointer;-webkit-backdrop-filter:blur(16px) saturate(150%);backdrop-filter:blur(16px) saturate(150%);"><span style="width:16px;height:1.5px;background:#F6F7FB;"></span><span style="width:16px;height:1.5px;background:#F6F7FB;"></span></button>
+      <button class="hzh3" data-action="open-modal" style="display:inline-flex;align-items:center;gap:9px;padding:11px 20px;border:1px solid rgba(246,247,251,0.2);border-radius:100px;background:rgba(246,247,251,0.02);color:#F6F7FB;font:500 13px 'Space Grotesk',sans-serif;letter-spacing:.01em;cursor:pointer;-webkit-backdrop-filter:blur(var(--glass-blur,18px)) saturate(160%);backdrop-filter:blur(var(--glass-blur,18px)) saturate(160%);transition:transform .35s,border-color .35s,background .35s;">Book a diagnosis</button>
+    </div>
+  </nav>
+
+  <div id="hzn-navmenu" data-open="0" style="position:fixed;top:70px;left:12px;right:12px;z-index:59;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .35s,transform .35s;border:1px solid rgba(246,247,251,0.12);border-radius:18px;padding:12px;background:linear-gradient(180deg,rgba(18,20,30,0.92),rgba(8,10,16,0.92));-webkit-backdrop-filter:blur(26px) saturate(170%);backdrop-filter:blur(26px) saturate(170%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.18),0 40px 90px -40px rgba(0,0,0,0.95);display:flex;flex-direction:column;gap:4px;">
+    <a class="hzh4" href="#brain" style="padding:15px 16px;border-radius:12px;text-decoration:none;color:#F6F7FB;font:500 16px 'Space Grotesk';transition:background .3s;">The Brain</a>
+    <a class="hzh5" href="#method" style="padding:15px 16px;border-radius:12px;text-decoration:none;color:#F6F7FB;font:500 16px 'Space Grotesk';transition:background .3s;">Method</a>
+    <a class="hzh6" href="#results" style="padding:15px 16px;border-radius:12px;text-decoration:none;color:#F6F7FB;font:500 16px 'Space Grotesk';transition:background .3s;">Results</a>
+  <button data-action="open-modal" style="display:none;margin-top:6px;width:100%;justify-content:center;align-items:center;gap:9px;padding:15px 16px;border:none;border-radius:12px;background:#F6F7FB;color:#06070C;font:600 16px 'Space Grotesk';cursor:pointer;">Book a diagnosis →</button></div>
+
+
+  <section id="cover" data-screen-label="Hero" style="position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:130px clamp(22px,7vw,140px) 90px;overflow:hidden;">
+    <div style="position:absolute;left:0;right:0;bottom:30%;display:flex;justify-content:center;pointer-events:none;">
+      <div data-parallax="-0.14" style="width:min(1500px,150vw);display:flex;justify-content:center;">
+        <div style="width:1100px;height:1100px;max-width:150vw;border-radius:50%;background:radial-gradient(circle at 50% 50%, rgba(246,247,251,0.17), rgba(165,185,235,0.06) 32%, transparent 62%);animation:hzn-pulse 9s ease-in-out infinite;"></div>
+      </div>
+    </div>
+    <div style="position:absolute;left:0;right:0;bottom:30%;height:1px;pointer-events:none;">
+      <div data-parallax="-0.06" style="height:1px;background:linear-gradient(90deg,transparent,rgba(246,247,251,0.55) 22%,#ffffff 50%,rgba(246,247,251,0.55) 78%,transparent);box-shadow:0 0 30px 2px rgba(246,247,251,0.4);opacity:var(--glow,0.7);"></div>
+    </div>
+    <div style="position:absolute;left:50%;bottom:30%;transform:translateX(-50%);width:200vw;height:200vw;pointer-events:none;overflow:hidden;">
+      <div data-parallax="-0.04" style="position:absolute;left:0;top:0;width:200vw;height:200vw;border-radius:50%;background:radial-gradient(circle at 50% 0%, rgba(24,28,46,0.85), rgba(6,7,12,0) 34%);border-top:1px solid rgba(246,247,251,0.16);"></div>
+    </div>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.55);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.4);"></span>AI-Native Business Consulting</div>
+      <h1 data-reveal data-reveal-delay="120" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(50px,9.5vw,150px);line-height:0.94;letter-spacing:-0.012em;color:#F6F7FB;margin:22px 0 0;text-shadow:0 0 70px rgba(246,247,251,0.22);max-width:14ch;text-wrap:balance;">The AI Brain behind your business.</h1>
+      <p data-reveal data-reveal-delay="230" style="font:400 clamp(15px,1.35vw,20px)/1.65 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.62);max-width:600px;margin:26px auto 0;">HORIZON builds the intelligence layer that runs your sales, marketing, content and operations — one system, trained on your data, proven with numbers.</p>
+      <div data-reveal data-reveal-delay="340" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:38px;">
+        <button class="hzh7" data-action="open-modal" style="display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border:none;border-radius:100px;background:#F6F7FB;color:#06070C;font:600 15px/1 'Space Grotesk';letter-spacing:.01em;cursor:pointer;box-shadow:0 0 0 1px rgba(255,255,255,0.5),0 18px 42px -18px rgba(226,232,255,0.7);transition:transform .35s cubic-bezier(.2,.7,.2,1),filter .35s;">Book a diagnosis →</button>
+        <a class="hzh8" href="#brain" style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border:1px solid rgba(246,247,251,0.2);border-radius:100px;background:rgba(246,247,251,0.02);color:#F6F7FB;font:500 15px/1 'Space Grotesk';cursor:pointer;text-decoration:none;-webkit-backdrop-filter:blur(var(--glass-blur,18px)) saturate(160%);backdrop-filter:blur(var(--glass-blur,18px)) saturate(160%);transition:transform .35s,border-color .35s,background .35s;">See the AI Brain</a>
+      </div>
+      <div data-reveal data-reveal-delay="480" style="display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:center;margin-top:48px;">
+        <span style="display:inline-flex;align-items:center;gap:9px;font:500 12px 'Space Grotesk';letter-spacing:.04em;color:rgba(246,247,251,0.5);"><span style="width:5px;height:5px;border-radius:50%;background:#F6F7FB;box-shadow:0 0 8px 1px rgba(246,247,251,0.8);"></span>Built across US · Brazil · Europe</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;font:500 12px 'Space Grotesk';letter-spacing:.04em;color:rgba(246,247,251,0.5);"><span style="width:5px;height:5px;border-radius:50%;background:#F6F7FB;box-shadow:0 0 8px 1px rgba(246,247,251,0.8);"></span>Depth over volume</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;font:500 12px 'Space Grotesk';letter-spacing:.04em;color:rgba(246,247,251,0.5);"><span style="width:5px;height:5px;border-radius:50%;background:#F6F7FB;box-shadow:0 0 8px 1px rgba(246,247,251,0.8);"></span>Measured in real numbers</span>
+      </div>
+    </div>
+    <div data-reveal data-reveal-delay="700" style="position:absolute;bottom:30px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;">
+      <span style="font:500 10px 'Space Grotesk';letter-spacing:.3em;text-transform:uppercase;color:rgba(246,247,251,0.4);">Scroll</span>
+      <span style="position:relative;width:1px;height:44px;background:rgba(246,247,251,0.15);overflow:hidden;"><span style="position:absolute;left:0;top:0;width:1px;height:14px;background:#F6F7FB;animation:hzn-cue 2.4s ease-in-out infinite;"></span></span>
+    </div>
+  </section>
+
+  <section style="position:relative;z-index:1;padding:clamp(30px,5vh,60px) 0;overflow:hidden;">
+    <div data-reveal style="font:500 11px 'Space Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:rgba(246,247,251,0.4);margin:0 0 26px clamp(22px,7vw,140px);">Where the Brain goes to work</div>
+    <div style="position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);">
+      <div style="display:flex;width:max-content;gap:64px;animation:hzn-marquee 32s linear infinite;"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:rgba(246,247,251,0.45);white-space:nowrap;">Luxury Hospitality</span><span style="font:600 24px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.4);white-space:nowrap;">Fine Dining</span><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:rgba(246,247,251,0.45);white-space:nowrap;">Resorts &amp; Spas</span><span style="font:600 24px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.4);white-space:nowrap;">B2B SaaS</span><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:rgba(246,247,251,0.45);white-space:nowrap;">Real Estate</span><span style="font:600 24px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.4);white-space:nowrap;">Members' Clubs</span><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:rgba(246,247,251,0.45);white-space:nowrap;">Wineries</span><span style="font:600 24px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.4);white-space:nowrap;">Corporate Events</span><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:rgba(246,247,251,0.45);white-space:nowrap;">Luxury Hospitality</span><span style="font:600 24px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.4);white-space:nowrap;">Fine Dining</span><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:rgba(246,247,251,0.45);white-space:nowrap;">Resorts &amp; Spas</span><span style="font:600 24px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.4);white-space:nowrap;">B2B SaaS</span><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:rgba(246,247,251,0.45);white-space:nowrap;">Real Estate</span><span style="font:600 24px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.4);white-space:nowrap;">Members' Clubs</span><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:rgba(246,247,251,0.45);white-space:nowrap;">Wineries</span><span style="font:600 24px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.4);white-space:nowrap;">Corporate Events</span></div>
+    </div>
+  </section>
+
+  <section id="problem" data-screen-label="Problem" style="position:relative;z-index:1;padding:clamp(90px,13vh,180px) clamp(22px,7vw,140px);scroll-margin-top:90px;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.5);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.4);"></span>The problem</div>
+      <h2 data-reveal data-reveal-from="left" data-reveal-delay="80" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.5vw,80px);line-height:1;letter-spacing:-0.006em;color:#F6F7FB;margin:0;margin-top:20px;max-width:16ch;">Most AI agencies sell a grab bag.</h2>
+      <p data-reveal data-reveal-delay="160" style="font:400 clamp(15px,1.15vw,18px)/1.7 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.55);max-width:62ch;margin:22px 0 44px;">A chatbot here. Some automated posts there. A lead tool somewhere else. Six months on: five disconnected tools that don't talk to each other — and no one who understands how any of it works.</p>
+      <div data-reveal data-reveal-delay="220" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
+        <div style="background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:34px;">
+          <div style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.42);">The usual</div>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-top:22px;">
+            <div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.55);">A chatbot, bolted on</span></div><div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.55);">Scheduled posts, off-brand</span></div><div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.55);">A lead tool nobody checks</span></div><div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.55);">Five logins, zero shared memory</span></div><div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.55);">A black box you don't own</span></div>
+          </div>
+        </div>
+        <div style="background:linear-gradient(180deg,rgba(255,255,255,0.14),rgba(246,247,251,0.035) 58%);-webkit-backdrop-filter:blur(32px) saturate(180%);backdrop-filter:blur(32px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.40),inset 0 0 60px -24px rgba(255,255,255,0.30),0 0 90px -32px rgba(246,247,251,0.42),0 46px 110px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.24);border-radius:22px;padding:34px;">
+          <div style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.6);">The HORIZON way</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;color:#F6F7FB;margin:14px 0 6px;">One AI Brain. Everything plugs in.</div>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-top:18px;">
+            <div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.8);">One system, trained on your data</span></div><div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.8);">Every function shares the same brain</span></div><div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.8);">It gets sharper every month</span></div><div style="display:flex;align-items:center;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px 'Space Grotesk';color:rgba(246,247,251,0.8);">Infrastructure you actually own</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="brain" data-screen-label="AI Brain" style="position:relative;z-index:1;padding:clamp(90px,13vh,180px) clamp(22px,7vw,140px);scroll-margin-top:90px;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.5);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.4);"></span>The core idea</div>
+      <h2 data-reveal data-reveal-delay="80" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.5vw,80px);line-height:1;letter-spacing:-0.006em;color:#F6F7FB;margin:0;margin-top:20px;">The AI Brain.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(30px,5vw,70px);align-items:center;margin-top:48px;">
+        <div data-reveal style="position:relative;width:min(420px,84vw);aspect-ratio:1;margin:0 auto;">
+          <div data-anim style="position:absolute;inset:12%;border-radius:50%;background:radial-gradient(circle,rgba(246,247,251,0.20),transparent 60%);animation:hzn-pulse 7s ease-in-out infinite;"></div>
+          <div style="position:absolute;inset:1%;border-radius:50%;border:1px solid rgba(246,247,251,0.07);"></div>
+          <div style="position:absolute;inset:16%;border-radius:50%;border:1px solid rgba(246,247,251,0.13);"></div>
+          <div style="position:absolute;inset:31%;border-radius:50%;background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="11.5" stroke="#F6F7FB" stroke-opacity=".8"/><circle cx="14" cy="14" r="5.4" stroke="#F6F7FB" stroke-opacity=".5"/><circle cx="14" cy="14" r="1.7" fill="#F6F7FB"/></svg>
+            <div style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(20px,2.6vw,28px);color:#F6F7FB;">AI Brain</div>
+            <div style="font:500 9px 'Space Grotesk';letter-spacing:.22em;text-transform:uppercase;color:rgba(246,247,251,0.45);">operating core</div>
+          </div>
+        </div>
+        <div data-reveal data-reveal-from="right" data-reveal-delay="120">
+          <p style="font:400 clamp(15px,1.15vw,18px)/1.7 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.55);max-width:52ch;">One centralized system, trained on your real data — products, customers, sales history, tone of voice, processes. It becomes the operating core; every function we build plugs into it.</p>
+          <div style="display:flex;flex-direction:column;gap:16px;margin:26px 0 28px;">
+            <div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.78);">One system of intelligence, not ten tools</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.78);">Every capability makes the others smarter</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.78);">You own the infrastructure — not a black box</span></div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:7px 14px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.7);">Sales</span><span style="padding:7px 14px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.7);">Marketing</span><span style="padding:7px 14px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.7);">Content</span><span style="padding:7px 14px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.7);">Support</span><span style="padding:7px 14px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.7);">Video</span>
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal data-reveal-delay="180" style="margin-top:clamp(40px,7vh,80px);background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:clamp(26px,4vw,40px);">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;">
+          <span style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.5);white-space:nowrap;">The Brain learns from</span>
+          <span style="flex:1;min-width:40px;height:1px;background:linear-gradient(90deg,rgba(246,247,251,0.25),transparent);"></span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;"><span style="padding:8px 15px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12.5px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.72);">Products</span><span style="padding:8px 15px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12.5px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.72);">Customers</span><span style="padding:8px 15px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12.5px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.72);">Sales history</span><span style="padding:8px 15px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12.5px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.72);">Tone of voice</span><span style="padding:8px 15px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12.5px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.72);">Pricing logic</span><span style="padding:8px 15px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12.5px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.72);">Internal processes</span><span style="padding:8px 15px;border-radius:100px;border:1px solid rgba(246,247,251,0.16);font:500 12.5px 'Space Grotesk';letter-spacing:.02em;color:rgba(246,247,251,0.72);">Past wins &amp; losses</span></div>
+      </div>
+      <div data-reveal data-reveal-delay="220" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:16px;">
+        <div class="hzh9" style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:30px 28px;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s;"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:34px;line-height:1;color:rgba(246,247,251,0.35);">01</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:23px;color:#F6F7FB;margin:16px 0 0;">Trained on your reality</h3><p style="font:400 14px/1.65 'Space Grotesk';color:rgba(246,247,251,0.55);margin:12px 0 0;">Not a generic model with your logo on it. The Brain learns from your actual products, customers, sales history, voice, pricing logic and internal processes — the way your business really works.</p></div><div class="hzh10" style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:30px 28px;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s;"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:34px;line-height:1;color:rgba(246,247,251,0.35);">02</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:23px;color:#F6F7FB;margin:16px 0 0;">The operating core</h3><p style="font:400 14px/1.65 'Space Grotesk';color:rgba(246,247,251,0.55);margin:12px 0 0;">It stops being a tool and becomes the layer your business runs on. Outbound, content, support and reporting all plug into the same core, instead of living as ten disconnected apps.</p></div><div class="hzh11" style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:30px 28px;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s;"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:34px;line-height:1;color:rgba(246,247,251,0.35);">03</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:23px;color:#F6F7FB;margin:16px 0 0;">It compounds every month</h3><p style="font:400 14px/1.65 'Space Grotesk';color:rgba(246,247,251,0.55);margin:12px 0 0;">Every capability you add makes the others smarter, because they share the same data and logic. The Brain gets sharper over time — and you own the infrastructure, not a subscription to someone else's black box.</p></div>
+      </div>
+
+      <p data-reveal data-reveal-delay="200" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(20px,2.6vw,32px);line-height:1.35;color:rgba(246,247,251,0.82);max-width:26ch;margin:clamp(40px,7vh,90px) auto 0;text-align:center;text-wrap:balance;">We don't just use AI. We build the brain of your company — and put it to work.</p>
+    </div>
+  </section>
+
+  <section id="services" data-screen-label="Services" style="position:relative;z-index:1;padding:clamp(90px,13vh,180px) clamp(22px,7vw,140px);scroll-margin-top:90px;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.5);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.4);"></span>Core services</div>
+      <h2 data-reveal data-reveal-delay="80" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.5vw,80px);line-height:1;letter-spacing:-0.006em;color:#F6F7FB;margin:0;margin-top:20px;">One Brain. Five ways it earns.</h2>
+      <div data-reveal data-reveal-delay="140" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:48px;">
+        <div data-flag style="grid-column:span 2;min-width:240px;position:relative;background:linear-gradient(180deg,rgba(255,255,255,0.14),rgba(246,247,251,0.035) 58%);-webkit-backdrop-filter:blur(32px) saturate(180%);backdrop-filter:blur(32px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.40),inset 0 0 60px -24px rgba(255,255,255,0.30),0 0 90px -32px rgba(246,247,251,0.42),0 46px 110px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.24);border-radius:22px;padding:36px;overflow:hidden;">
+          <span style="position:absolute;top:26px;right:26px;padding:6px 12px;border-radius:100px;background:rgba(246,247,251,0.9);color:#06070C;font:600 10px 'Space Grotesk';letter-spacing:.08em;text-transform:uppercase;">Flagship</span>
+          <span style="display:inline-flex;width:48px;height:48px;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.24);border-radius:14px;"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="10.5" stroke="#F6F7FB" stroke-opacity=".85"/><circle cx="13" cy="13" r="5" stroke="#F6F7FB" stroke-opacity=".55"/><circle cx="13" cy="13" r="1.6" fill="#F6F7FB"/></svg></span>
+          <div style="font:500 12px 'Space Grotesk';letter-spacing:.16em;text-transform:uppercase;color:rgba(246,247,251,0.5);margin-top:22px;">01 · AI Brain Implementation</div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,3vw,38px);color:#F6F7FB;margin:6px 0 0;">The foundation of everything else</h3>
+          <p style="font:400 15px/1.7 'Space Grotesk';color:rgba(246,247,251,0.58);margin:14px 0 0;max-width:56ch;">We audit how the business actually runs, then design and build a custom AI system trained on your real data, voice and processes — integrated into your existing tools without disrupting daily operations.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;">
+            <span style="padding:6px 12px;border-radius:8px;background:rgba(246,247,251,0.06);color:rgba(246,247,251,0.7);font:500 12px 'Space Grotesk';">Operational audit</span><span style="padding:6px 12px;border-radius:8px;background:rgba(246,247,251,0.06);color:rgba(246,247,251,0.7);font:500 12px 'Space Grotesk';">Brain architecture</span><span style="padding:6px 12px;border-radius:8px;background:rgba(246,247,251,0.06);color:rgba(246,247,251,0.7);font:500 12px 'Space Grotesk';">CRM / POS / booking integration</span><span style="padding:6px 12px;border-radius:8px;background:rgba(246,247,251,0.06);color:rgba(246,247,251,0.7);font:500 12px 'Space Grotesk';">Staff training</span><span style="padding:6px 12px;border-radius:8px;background:rgba(246,247,251,0.06);color:rgba(246,247,251,0.7);font:500 12px 'Space Grotesk';">Ongoing tuning</span>
+          </div>
+          <div style="margin-top:22px;padding-top:20px;border-top:1px solid rgba(246,247,251,0.12);font:500 13px 'Space Grotesk';color:rgba(246,247,251,0.6);">Audit → Quick-win build (2–4 wks) → Core Brain → Scale</div>
+        </div>
+        <div class="hzh12" style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:30px;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s;"><span style="display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.16);border-radius:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polygon points="12,3 21,12 12,21 3,12" stroke="#F6F7FB" stroke-opacity=".8" stroke-width="1.2"/></svg></span><div style="font:500 12px 'Space Grotesk';letter-spacing:.16em;text-transform:uppercase;color:rgba(246,247,251,0.42);margin-top:20px;">02</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;margin:6px 0 0;">Sales &amp; Lead Generation</h3><p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.5);margin:12px 0 0;">Account-based, precision outreach powered by the Brain — reps only talk to warm, ready buyers.</p></div><div class="hzh13" style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:30px;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s;"><span style="display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.16);border-radius:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polygon points="12,4 22,20 2,20" stroke="#F6F7FB" stroke-opacity=".8" stroke-width="1.2" stroke-linejoin="round"/></svg></span><div style="font:500 12px 'Space Grotesk';letter-spacing:.16em;text-transform:uppercase;color:rgba(246,247,251,0.42);margin-top:20px;">03</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;margin:6px 0 0;">Marketing &amp; Content</h3><p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.5);margin:12px 0 0;">Full content operations — on-brand, on-strategy, produced at a fraction of the time.</p></div><div class="hzh14" style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:30px;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s;"><span style="display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.16);border-radius:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#F6F7FB" stroke-opacity=".8" stroke-width="1.2"/></svg></span><div style="font:500 12px 'Space Grotesk';letter-spacing:.16em;text-transform:uppercase;color:rgba(246,247,251,0.42);margin-top:20px;">04</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;margin:6px 0 0;">Customer Operations</h3><p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.5);margin:12px 0 0;">Volume handled 24/7, response times protected, humans looped in only when it counts.</p></div><div class="hzh15" style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:30px;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s;"><span style="display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.16);border-radius:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="#F6F7FB" stroke-opacity=".8" stroke-width="1.2"/><polygon points="10,8.5 16,12 10,15.5" fill="#F6F7FB" fill-opacity=".85"/></svg></span><div style="font:500 12px 'Space Grotesk';letter-spacing:.16em;text-transform:uppercase;color:rgba(246,247,251,0.42);margin-top:20px;">05</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;margin:6px 0 0;">Cinematic Video</h3><p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.5);margin:12px 0 0;">Premium craft for hospitality &amp; luxury — built for performance, feeding the content system.</p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="capabilities" data-screen-label="Capabilities" style="position:relative;z-index:1;padding:clamp(90px,13vh,180px) clamp(22px,7vw,140px);scroll-margin-top:90px;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.5);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.4);"></span>Full scope</div>
+      <h2 data-reveal data-reveal-delay="80" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.5vw,80px);line-height:1;letter-spacing:-0.006em;color:#F6F7FB;margin:20px 0 0;">Everything the Brain can run.</h2>
+      <p data-reveal data-reveal-delay="140" style="font:400 clamp(15px,1.15vw,18px)/1.7 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.55);max-width:62ch;margin:22px 0 44px;">Every capability below is an application of the same AI Brain — not a separate, disconnected service line. Expand each to see exactly what's included.</p>
+      <div data-reveal data-reveal-delay="180" style="background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:24px;overflow:hidden;">
+        
+        <div data-acc-item data-open="0" style="border-bottom:1px solid rgba(246,247,251,0.08);">
+          <button data-action="accordion" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px clamp(22px,3vw,34px);border:none;background:none;color:#F6F7FB;text-align:left;cursor:pointer;">
+            <span style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;">
+              <span style="font:500 13px 'Space Grotesk';letter-spacing:.14em;color:rgba(246,247,251,0.35);">01</span>
+              <span style="display:flex;flex-direction:column;gap:4px;">
+                <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(21px,2.6vw,30px);line-height:1.1;">AI Brain Implementation</span>
+                <span style="font:400 13px 'Space Grotesk';color:rgba(246,247,251,0.45);">Flagship — the foundation of everything else</span>
+              </span>
+            </span>
+            <span data-acc-ico style="font:300 28px 'Space Grotesk';color:rgba(246,247,251,0.6);transition:transform .4s;flex:none;">+</span>
+          </button>
+          <div data-acc-panel style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.3,.7,.2,1),opacity .45s;">
+            <div style="padding:0 clamp(22px,3vw,34px) 30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 30px;max-width:1000px;">
+              <div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Full operational audit: workflows, bottlenecks, repetitive tasks, data sources and existing tools</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Design of the AI Brain architecture: what data feeds it, what it needs to know, what decisions and actions it should support</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Build and integration into existing systems — CRM, email, e-commerce, POS, booking, internal tools — without disrupting daily operations</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Training the system on your actual voice, offers, pricing logic and customer history</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Staff training so your internal team can operate and extend the system with confidence</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Ongoing tuning as the business and its data evolve</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-acc-item data-open="0" style="border-bottom:1px solid rgba(246,247,251,0.08);">
+          <button data-action="accordion" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px clamp(22px,3vw,34px);border:none;background:none;color:#F6F7FB;text-align:left;cursor:pointer;">
+            <span style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;">
+              <span style="font:500 13px 'Space Grotesk';letter-spacing:.14em;color:rgba(246,247,251,0.35);">02</span>
+              <span style="display:flex;flex-direction:column;gap:4px;">
+                <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(21px,2.6vw,30px);line-height:1.1;">AI-Powered Sales &amp; Lead Generation</span>
+                <span style="font:400 13px 'Space Grotesk';color:rgba(246,247,251,0.45);">Precision, account-based outreach</span>
+              </span>
+            </span>
+            <span data-acc-ico style="font:300 28px 'Space Grotesk';color:rgba(246,247,251,0.6);transition:transform .4s;flex:none;">+</span>
+          </button>
+          <div data-acc-panel style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.3,.7,.2,1),opacity .45s;">
+            <div style="padding:0 clamp(22px,3vw,34px) 30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 30px;max-width:1000px;">
+              <div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Identification of ideal target accounts using data and AI-driven scoring</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Automated deep research on every target account — decision-makers, pain points, timing signals</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Hyper-personalized outreach at scale, generated and refined by the Brain — not generic mail-merge</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Automatic lead qualification and scoring, so sales talks only to warm, ready buyers</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Multi-touch nurture sequences that run without manual follow-up</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Full visibility into pipeline health through the same central system</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-acc-item data-open="0" style="border-bottom:1px solid rgba(246,247,251,0.08);">
+          <button data-action="accordion" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px clamp(22px,3vw,34px);border:none;background:none;color:#F6F7FB;text-align:left;cursor:pointer;">
+            <span style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;">
+              <span style="font:500 13px 'Space Grotesk';letter-spacing:.14em;color:rgba(246,247,251,0.35);">03</span>
+              <span style="display:flex;flex-direction:column;gap:4px;">
+                <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(21px,2.6vw,30px);line-height:1.1;">AI-Driven Marketing &amp; Content Systems</span>
+                <span style="font:400 13px 'Space Grotesk';color:rgba(246,247,251,0.45);">Strategy, production and publishing</span>
+              </span>
+            </span>
+            <span data-acc-ico style="font:300 28px 'Space Grotesk';color:rgba(246,247,251,0.6);transition:transform .4s;flex:none;">+</span>
+          </button>
+          <div data-acc-panel style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.3,.7,.2,1),opacity .45s;">
+            <div style="padding:0 clamp(22px,3vw,34px) 30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 30px;max-width:1000px;">
+              <div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Editorial strategy and content calendar built around what actually converts</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Accelerated production: copy, graphics and video variants generated with AI, reviewed by our team</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Repurposing engine: one long-form asset becomes a full multi-platform series automatically</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Community management and publishing across channels</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Performance-based iteration — what works gets scaled, what doesn't gets cut, continuously</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Paid campaign support when advertising is the right lever to accelerate growth</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-acc-item data-open="0" style="border-bottom:1px solid rgba(246,247,251,0.08);">
+          <button data-action="accordion" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px clamp(22px,3vw,34px);border:none;background:none;color:#F6F7FB;text-align:left;cursor:pointer;">
+            <span style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;">
+              <span style="font:500 13px 'Space Grotesk';letter-spacing:.14em;color:rgba(246,247,251,0.35);">04</span>
+              <span style="display:flex;flex-direction:column;gap:4px;">
+                <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(21px,2.6vw,30px);line-height:1.1;">Customer Operations &amp; Support Automation</span>
+                <span style="font:400 13px 'Space Grotesk';color:rgba(246,247,251,0.45);">Volume handled, response times protected</span>
+              </span>
+            </span>
+            <span data-acc-ico style="font:300 28px 'Space Grotesk';color:rgba(246,247,251,0.6);transition:transform .4s;flex:none;">+</span>
+          </button>
+          <div data-acc-panel style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.3,.7,.2,1),opacity .45s;">
+            <div style="padding:0 clamp(22px,3vw,34px) 30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 30px;max-width:1000px;">
+              <div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Automated handling of common customer inquiries, 24/7</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Intelligent escalation to a human only when it truly requires one</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">A knowledge base that improves with every interaction</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Sentiment monitoring to catch at-risk or unhappy customers early</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Reporting that shows exactly where time and cost are being saved</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-acc-item data-open="0">
+          <button data-action="accordion" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px clamp(22px,3vw,34px);border:none;background:none;color:#F6F7FB;text-align:left;cursor:pointer;">
+            <span style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;">
+              <span style="font:500 13px 'Space Grotesk';letter-spacing:.14em;color:rgba(246,247,251,0.35);">05</span>
+              <span style="display:flex;flex-direction:column;gap:4px;">
+                <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(21px,2.6vw,30px);line-height:1.1;">Cinematic Video Production</span>
+                <span style="font:400 13px 'Space Grotesk';color:rgba(246,247,251,0.45);">Premium craft — where the Brain needs a camera</span>
+              </span>
+            </span>
+            <span data-acc-ico style="font:300 28px 'Space Grotesk';color:rgba(246,247,251,0.6);transition:transform .4s;flex:none;">+</span>
+          </button>
+          <div data-acc-panel style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.3,.7,.2,1),opacity .45s;">
+            <div style="padding:0 clamp(22px,3vw,34px) 30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 30px;max-width:1000px;">
+              <div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Property and experience tours for resorts, hotels and hospitality venues</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Brand films and corporate documentaries</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Conversion-focused ad content and vertical social video</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;margin-top:9px;width:5px;height:5px;border-radius:50%;background:rgba(246,247,251,0.55);box-shadow:0 0 8px 1px rgba(246,247,251,0.45);"></span><span style="font:400 14.5px/1.6 'Space Grotesk';color:rgba(246,247,251,0.62);">Content built to feed directly back into the AI content system — not one-off deliverables</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="method" data-screen-label="Method" style="position:relative;z-index:1;padding:clamp(90px,13vh,180px) clamp(22px,7vw,140px);scroll-margin-top:90px;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.5);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.4);"></span>How we work</div>
+      <h2 data-reveal data-reveal-delay="80" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.5vw,80px);line-height:1;letter-spacing:-0.006em;color:#F6F7FB;margin:0;margin-top:20px;">A working plan in weeks, not quarters.</h2>
+      <div data-reveal data-reveal-delay="140" style="position:relative;margin-top:52px;">
+        <div style="position:absolute;left:0;right:0;top:40px;height:1px;background:linear-gradient(90deg,transparent,rgba(246,247,251,0.35),transparent);"></div>
+        <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;">
+          <div style="background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:20px;padding:28px 26px;"><div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;">01</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;margin:20px 0 0;">Diagnose</h3><p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.52);margin:10px 0 0;">We map how the business runs today and produce a prioritised opportunity map with estimated ROI per build.</p></div><div style="background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:20px;padding:28px 26px;"><div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;">02</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;margin:20px 0 0;">Design</h3><p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.52);margin:10px 0 0;">A concrete operating plan: what the Brain learns first, which channels matter, what gets built and measured.</p></div><div style="background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:20px;padding:28px 26px;"><div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;">03</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;margin:20px 0 0;">Build</h3><p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.52);margin:10px 0 0;">We implement the system, content engine, outreach and integrations — connected without disrupting operations.</p></div><div style="background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:20px;padding:28px 26px;"><div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;">04</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;color:#F6F7FB;margin:20px 0 0;">Optimize</h3><p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.52);margin:10px 0 0;">Nothing is set-and-forget. We tune against real results and expand into new functions every quarter.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" data-screen-label="Results" style="position:relative;z-index:1;padding:clamp(90px,13vh,180px) clamp(22px,7vw,140px);scroll-margin-top:90px;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.5);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.4);"></span>Proof, not hype</div>
+      <h2 data-reveal data-reveal-delay="80" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.5vw,80px);line-height:1;letter-spacing:-0.006em;color:#F6F7FB;margin:0;margin-top:20px;">Measured in real numbers.</h2>
+      <p data-reveal data-reveal-delay="140" style="font:400 clamp(15px,1.15vw,18px)/1.7 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.55);max-width:60ch;margin:22px 0 44px;">Every engagement is built around a small set of tracked metrics, agreed before any work begins. Ranges we typically see once a system is live and tuned.</p>
+      <div data-reveal data-reveal-delay="180" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border:1px solid rgba(246,247,251,0.10);border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);">
+        <div style="padding:34px 30px;border-right:1px solid rgba(246,247,251,0.08);border-bottom:1px solid rgba(246,247,251,0.08);"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(44px,5vw,64px);line-height:1;color:#F6F7FB;"><span data-count="70" data-suffix="%">70%</span></div><div style="font:400 13px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);margin-top:12px;">Less manual research time per prospect</div></div><div style="padding:34px 30px;border-right:1px solid rgba(246,247,251,0.08);border-bottom:1px solid rgba(246,247,251,0.08);"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(44px,5vw,64px);line-height:1;color:#F6F7FB;"><span data-count="3" data-suffix="×">3×</span></div><div style="font:400 13px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);margin-top:12px;">Increase in outreach response rate</div></div><div style="padding:34px 30px;border-right:1px solid rgba(246,247,251,0.08);border-bottom:1px solid rgba(246,247,251,0.08);"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(44px,5vw,64px);line-height:1;color:#F6F7FB;"><span data-count="10" data-suffix="×">10×</span></div><div style="font:400 13px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);margin-top:12px;">Content output at the same team size</div></div><div style="padding:34px 30px;border-right:1px solid rgba(246,247,251,0.08);border-bottom:1px solid rgba(246,247,251,0.08);"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(44px,5vw,64px);line-height:1;color:#F6F7FB;"><span data-count="80" data-suffix="%">80%</span></div><div style="font:400 13px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);margin-top:12px;">Routine inquiries handled autonomously</div></div><div style="padding:34px 30px;border-right:1px solid rgba(246,247,251,0.08);border-bottom:1px solid rgba(246,247,251,0.08);"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(44px,5vw,64px);line-height:1;color:#F6F7FB;"><span data-count="40" data-suffix="%">40%</span></div><div style="font:400 13px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);margin-top:12px;">Less production time per asset</div></div><div style="padding:34px 30px;border-right:1px solid rgba(246,247,251,0.08);border-bottom:1px solid rgba(246,247,251,0.08);"><div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(44px,5vw,64px);line-height:1;color:#F6F7FB;">24/7</div><div style="font:400 13px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);margin-top:12px;">Coverage with no added headcount</div></div>
+      </div>
+      <div data-reveal data-reveal-delay="220" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;margin-top:16px;">
+        <span style="font:400 12px 'Space Grotesk';color:rgba(246,247,251,0.34);max-width:60ch;">Directional benchmarks, not guarantees — every client gets a specific baseline and target during the diagnose phase.</span>
+        <span style="font:500 12px 'Space Grotesk';color:rgba(246,247,251,0.55);">Reported in plain numbers a CFO can act on.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="who" data-screen-label="Who it is for" style="position:relative;z-index:1;padding:clamp(90px,13vh,180px) clamp(22px,7vw,140px);scroll-margin-top:90px;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.5);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.4);"></span>The fit</div>
+      <h2 data-reveal data-reveal-delay="80" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.5vw,80px);line-height:1;letter-spacing:-0.006em;color:#F6F7FB;margin:0;margin-top:20px;max-width:16ch;">We work with a few clients at a time. By design.</h2>
+      <div data-reveal data-reveal-delay="160" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:44px;">
+        <div style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:34px;">
+          <div style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.6);">Built for</div>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-top:22px;">
+            <div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.78);">Established US B2B ready to treat AI as infrastructure</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.78);">Hospitality, luxury &amp; premium F&amp;B brands</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.78);">Wholesale, real estate, e-commerce, pro services</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.78);">Operators who want time back from repetitive work</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.7);display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#F6F7FB;">✓</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.78);">Early movers comfortable being measured on numbers</span></div>
+          </div>
+        </div>
+        <div style="background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:22px;padding:34px;">
+          <div style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.42);">Not for (yet)</div>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-top:22px;">
+            <div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);">Very small teams where a real system is overkill</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);">Chaotic, undocumented processes</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);">Anyone wanting “AI magic” with no process change</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);">Buyers shopping purely on lowest price</span></div><div style="display:flex;align-items:flex-start;gap:13px;"><span style="flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(246,247,251,0.16);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:rgba(246,247,251,0.35);">✕</span><span style="font:400 15px/1.5 'Space Grotesk';color:rgba(246,247,251,0.5);">One-off, transactional requests</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-screen-label="Contact" style="position:relative;z-index:1;padding:clamp(90px,13vh,180px) clamp(22px,7vw,140px);scroll-margin-top:90px;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div data-reveal style="background:linear-gradient(180deg,rgba(255,255,255,0.10),rgba(246,247,251,0.02) 60%);-webkit-backdrop-filter:blur(26px) saturate(165%);backdrop-filter:blur(26px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.30),inset 0 -1px 0 rgba(255,255,255,0.05),inset 0 0 44px -22px rgba(255,255,255,0.22),0 44px 100px -46px rgba(0,0,0,0.96);border:1px solid rgba(246,247,251,0.10);border-radius:26px;padding:clamp(34px,6vw,72px);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(30px,5vw,60px);align-items:center;">
+        <div>
+          <div style="font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.55);">Start here</div>
+          <h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,4.6vw,60px);line-height:1.02;color:#F6F7FB;margin:16px 0 0;">Book a diagnosis.</h2>
+          <p style="font:400 clamp(15px,1.15vw,18px)/1.7 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.55);max-width:46ch;margin:16px 0 0;">A prioritised opportunity map with estimated ROI — before any build begins. Typically 2–4 weeks. No obligation.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <input class="hzf16" type="email" placeholder="Company email" style="width:100%;padding:16px 18px;border:1px solid rgba(246,247,251,0.14);border-radius:12px;background:rgba(246,247,251,0.03);color:#F6F7FB;font:400 15px 'Space Grotesk';outline:none;transition:border-color .3s,box-shadow .3s,background .3s;">
+          <button class="hzh17" data-action="open-modal" style="width:100%;justify-content:center;display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border:none;border-radius:100px;background:#F6F7FB;color:#06070C;font:600 15px/1 'Space Grotesk';letter-spacing:.01em;cursor:pointer;box-shadow:0 0 0 1px rgba(255,255,255,0.5),0 18px 42px -18px rgba(226,232,255,0.7);transition:transform .35s cubic-bezier(.2,.7,.2,1),filter .35s;">Request diagnosis →</button>
+          <span style="font:400 12px 'Space Grotesk';color:rgba(246,247,251,0.4);text-align:center;">We reply within one business day · hello@horizon.ai</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="closing" data-screen-label="Closing" style="position:relative;z-index:1;min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(90px,14vh,200px) clamp(22px,7vw,140px);overflow:hidden;scroll-margin-top:90px;">
+    <div style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;pointer-events:none;"><div data-parallax="-0.1" style="width:min(1400px,150vw);display:flex;justify-content:center;"><div style="width:1000px;height:1000px;max-width:150vw;border-radius:50%;background:radial-gradient(circle at 50% 60%, rgba(246,247,251,0.16), rgba(165,185,235,0.05) 34%, transparent 60%);animation:hzn-pulse 9s ease-in-out infinite;"></div></div></div>
+    <div style="position:absolute;left:0;right:0;bottom:16%;height:1px;background:linear-gradient(90deg,transparent,rgba(246,247,251,0.5) 25%,#fff 50%,rgba(246,247,251,0.5) 75%,transparent);box-shadow:0 0 30px 2px rgba(246,247,251,0.35);opacity:var(--glow,0.7);pointer-events:none;"></div>
+    <div style="position:relative;z-index:2;">
+      <div data-reveal style="font:500 12px 'Space Grotesk',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:rgba(246,247,251,0.5);">In one line</div>
+      <h2 data-reveal data-reveal-from="scale" data-reveal-delay="120" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(30px,5.4vw,74px);line-height:1.14;letter-spacing:-0.005em;color:#F6F7FB;margin:22px auto 0;max-width:20ch;text-wrap:balance;text-shadow:0 0 60px rgba(246,247,251,0.2);">HORIZON builds the AI Brain behind American businesses — and puts it to work.</h2>
+      <p data-reveal data-reveal-delay="240" style="font:400 15px/1.7 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.5);max-width:52ch;margin:24px auto 0;">Sales, marketing, operations — with the numbers to prove it.</p>
+      <div data-reveal data-reveal-delay="340" style="margin-top:34px;"><button class="hzh18" data-action="open-modal" style="display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border:none;border-radius:100px;background:#F6F7FB;color:#06070C;font:600 15px/1 'Space Grotesk';letter-spacing:.01em;cursor:pointer;box-shadow:0 0 0 1px rgba(255,255,255,0.5),0 18px 42px -18px rgba(226,232,255,0.7);transition:transform .35s cubic-bezier(.2,.7,.2,1),filter .35s;">Book a diagnosis →</button></div>
+    </div>
+  </section>
+
+
+  <footer style="position:relative;z-index:1;border-top:1px solid rgba(246,247,251,0.10);padding:clamp(50px,7vh,90px) clamp(22px,7vw,140px) 40px;background:rgba(6,7,12,0.5);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);">
+    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px;">
+      <div data-flag style="grid-column:span 2;min-width:220px;">
+        <div style="display:flex;align-items:center;gap:13px;"><span style="position:relative;display:inline-flex;width:26px;height:26px;flex:none;align-items:center;justify-content:center;"><span style="position:absolute;inset:0;border-radius:50%;border:1px solid rgba(246,247,251,0.3);"></span><span style="position:absolute;left:2px;right:2px;top:12px;height:1px;background:linear-gradient(90deg,transparent,rgba(246,247,251,0.75),transparent);"></span><span data-anim style="width:8px;height:8px;border-radius:50%;background:#F6F7FB;box-shadow:0 0 12px 2px rgba(246,247,251,0.9);animation:hzn-pulse 6s ease-in-out infinite;"></span></span><span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;letter-spacing:.34em;color:#F6F7FB;padding-left:.34em;">HORIZON</span></div>
+        <p style="font:400 14px/1.7 'Space Grotesk';color:rgba(246,247,251,0.45);margin:18px 0 0;max-width:34ch;">AI-native business consulting, built for the American market. Depth beats volume.</p>
+        <div style="display:flex;gap:10px;margin-top:22px;">
+          <a class="hzh19" href="#cover" style="width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.16);border-radius:50%;color:rgba(246,247,251,0.7);font:500 13px 'Space Grotesk';text-decoration:none;transition:.3s;">in</a>
+          <a class="hzh20" href="#cover" style="width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.16);border-radius:50%;color:rgba(246,247,251,0.7);font:500 13px 'Space Grotesk';text-decoration:none;transition:.3s;">X</a>
+          <a class="hzh21" href="#cover" style="width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.16);border-radius:50%;color:rgba(246,247,251,0.7);font:500 15px 'Space Grotesk';text-decoration:none;transition:.3s;">↗</a>
+        </div>
+      </div>
+      <div>
+        <div style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.4);">System</div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
+          <a class="hzh22" href="#brain" style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);text-decoration:none;transition:color .3s;">The Brain</a>
+          <a class="hzh23" href="#method" style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);text-decoration:none;transition:color .3s;">Method</a>
+          <a class="hzh24" href="#results" style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);text-decoration:none;transition:color .3s;">Results</a>
+        </div>
+      </div>
+      <div>
+        <div style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.4);">Services</div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
+          <span style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);">AI Brain</span>
+          <span style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);">Lead Generation</span>
+          <span style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);">Content Systems</span>
+          <span style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);">Cinematic Video</span>
+        </div>
+      </div>
+      <div>
+        <div style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.4);">Contact</div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
+          <span style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);">hello@horizon.ai</span>
+          <span style="font:400 14px 'Space Grotesk';color:rgba(246,247,251,0.6);">United States</span>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1240px;margin:48px auto 0;padding-top:26px;border-top:1px solid rgba(246,247,251,0.08);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font:400 12px 'Space Grotesk';color:rgba(246,247,251,0.35);">
+      <span>© 2026 HORIZON. The Horizon System v1.0.</span>
+      <span>Built for the American market.</span>
+    </div>
+  </footer>
+
+  <div id="hzn-modal" data-action="close-modal" style="position:fixed;inset:0;z-index:90;display:none;opacity:0;align-items:center;justify-content:center;padding:24px;background:rgba(4,5,10,0.7);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:opacity .4s;">
+    <div data-modal-card data-action="noop" style="width:100%;max-width:440px;border:1px solid rgba(246,247,251,0.16);border-radius:24px;padding:38px;background:linear-gradient(180deg,rgba(30,34,48,0.92),rgba(10,12,20,0.92));-webkit-backdrop-filter:blur(34px) saturate(180%);backdrop-filter:blur(34px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.28),inset 0 0 60px -28px rgba(255,255,255,0.22),0 60px 120px -50px rgba(0,0,0,0.96),0 0 90px -40px rgba(246,247,251,0.34);opacity:0;transform:translateY(14px) scale(0.98);transition:opacity .45s,transform .45s cubic-bezier(.2,.7,.2,1);">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;">
+        <div><div style="font:500 11px 'Space Grotesk';letter-spacing:.2em;text-transform:uppercase;color:rgba(246,247,251,0.45);">Diagnostic</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:32px;color:#F6F7FB;margin:8px 0 0;">Book a diagnosis</h3></div>
+        <button class="hzh25" data-action="close-modal" style="width:36px;height:36px;flex:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(246,247,251,0.16);border-radius:50%;background:none;color:rgba(246,247,251,0.7);font:400 18px 'Space Grotesk';cursor:pointer;transition:.3s;">×</button>
+      </div>
+      <p style="font:400 14px/1.6 'Space Grotesk';color:rgba(246,247,251,0.5);margin:14px 0 24px;">A prioritised opportunity map with estimated ROI — before any build begins.</p>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <input class="hzf26" type="email" placeholder="Company email" style="width:100%;padding:14px 16px;border:1px solid rgba(246,247,251,0.14);border-radius:12px;background:rgba(246,247,251,0.03);color:#F6F7FB;font:400 15px 'Space Grotesk';outline:none;transition:.3s;">
+        <button class="hzh27" data-action="close-modal" style="width:100%;padding:15px;border:none;border-radius:12px;background:#F6F7FB;color:#06070C;font:600 15px 'Space Grotesk';cursor:pointer;box-shadow:0 0 0 1px rgba(255,255,255,0.4);transition:filter .3s;">Request diagnosis →</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script>
+class HznComponent {
+  constructor(){ this.props = { motion:'cinematic', glassStrength:24, glow:100, nebula:90, starDensity:75, grain:45 }; }
+  
+
+  componentDidMount(){
+    this.root = document.getElementById('hzn-root');
+    if(!this.root) return;
+    this.readCfg();
+    this.applyCfg();
+    this.initStars();
+    this.initParallax();
+    this.initReveal();
+    this.initInteractions();
+    this.initSpotlight();
+    this.bindScroll();
+    this.loop = this.loop.bind(this);
+    this.raf = requestAnimationFrame(this.loop);
+  }
+
+  componentDidUpdate(){
+    if(!this.root) return;
+    this.readCfg();
+    this.applyCfg();
+    if(this.canvas) this.buildStars();
+    this.initSpotlight();
+  }
+
+  componentWillUnmount(){
+    if(this.raf) cancelAnimationFrame(this.raf);
+    if(this._onScroll) window.removeEventListener('scroll', this._onScroll);
+    if(this._onResize) window.removeEventListener('resize', this._onResize);
+    if(this.io) this.io.disconnect();
+  }
+
+  readCfg(){
+    const p = this.props || {};
+    const motion = p.motion || 'cinematic';
+    this.reduced = motion === 'still' || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    this.cfg = {
+      motion: motion,
+      glassBlur: (p.glassStrength != null ? p.glassStrength : 24),
+      glow: (p.glow != null ? p.glow : 70) / 100,
+      starPct: (p.starDensity != null ? p.starDensity : 60) / 100,
+      neb: (p.nebula != null ? p.nebula : 70) / 100,
+      grain: (p.grain != null ? p.grain : 45) / 100,
+      pMul: motion === 'cinematic' ? 1 : (motion === 'subtle' ? 0.4 : 0)
+    };
+    this.starOp = 0.5 + 0.5 * this.cfg.starPct;
+  }
+
+  applyCfg(){
+    const r = this.root;
+    r.style.setProperty('--glass-blur', this.cfg.glassBlur + 'px');
+    r.style.setProperty('--glow', this.cfg.glow.toFixed(3));
+    r.style.setProperty('--neb', this.cfg.neb.toFixed(3));
+    r.style.setProperty('--grain', (this.cfg.grain * 0.26).toFixed(3));
+  }
+
+  initStars(){
+    this.canvas = document.getElementById('hzn-stars');
+    if(!this.canvas) return;
+    this.ctx = this.canvas.getContext('2d');
+    this._onResize = () => { this.sizeCanvas(); this.buildStars(); if(this.pEls) this.measureParallax(); };
+    window.addEventListener('resize', this._onResize);
+    this.sizeCanvas();
+    this.buildStars();
+  }
+
+  sizeCanvas(){
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    this.vw = window.innerWidth;
+    this.vh = window.innerHeight;
+    this.canvas.width = this.vw * dpr;
+    this.canvas.height = this.vh * dpr;
+    this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    this.fieldH = this.vh * 1.7;
+  }
+
+  buildStars(){
+    const area = (this.vw * this.vh) / 6500;
+    const n = Math.max(0, Math.round(area * (0.3 + 1.6 * this.cfg.starPct)));
+    this.stars = [];
+    for(let i=0;i<n;i++){
+      const bright = Math.random() < 0.06;
+      this.stars.push({
+        x: Math.random() * this.vw,
+        y: Math.random() * this.fieldH,
+        z: Math.random() * 0.85 + 0.15,
+        r: bright ? (Math.random() * 1.2 + 1.1) : (Math.random() * 1.1 + 0.25),
+        tw: Math.random() * Math.PI * 2,
+        ts: 0.5 + Math.random() * 1.3,
+        bright: bright,
+        warm: Math.random() < 0.18
+      });
+    }
+    const band = Math.round(n * 0.5);
+    for(let i=0;i<band;i++){
+      const t = Math.random();
+      const cy = this.fieldH * (0.12 + 0.64 * t);
+      const spread = this.vh * 0.11;
+      let by = cy + (Math.random() - 0.5) * 2 * spread * (0.4 + Math.random());
+      by = ((by % this.fieldH) + this.fieldH) % this.fieldH;
+      this.stars.push({ x: t * this.vw, y: by, z: Math.random() * 0.5 + 0.1, r: Math.random() * 0.8 + 0.2, tw: Math.random() * 6.283, ts: 0.5 + Math.random(), bright: false, warm: Math.random() < 0.25 });
+    }
+    if(this.stars.length > 900) this.stars.length = 900;
+  }
+
+  initParallax(){
+    this.pEls = [].slice.call(this.root.querySelectorAll('[data-parallax]')).map((el) => ({
+      el: el,
+      k: parseFloat(el.getAttribute('data-parallax')) || 0,
+      top: 0
+    }));
+    this.measureParallax();
+  }
+
+  measureParallax(){
+    const sc = window.scrollY || window.pageYOffset || 0;
+    this.pEls.forEach((p) => {
+      const r = p.el.getBoundingClientRect();
+      p.top = r.top + sc + r.height / 2;
+    });
+  }
+
+  initReveal(){
+    const els = [].slice.call(this.root.querySelectorAll('[data-reveal]'));
+    if(this.reduced){
+      els.forEach((el) => { el.style.opacity = '1'; this.fireExtras(el); });
+      return;
+    }
+    const vh = window.innerHeight;
+    const toObserve = [];
+    els.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if(r.top < vh * 0.92 && r.bottom > 0){
+        el.style.opacity = '1';
+        this.fireExtras(el);
+      } else {
+        el.style.opacity = '0';
+        const from = el.getAttribute('data-reveal-from');
+        el.style.transform = from === 'left' ? 'translateX(-42px)' : from === 'right' ? 'translateX(42px)' : from === 'scale' ? 'scale(0.94)' : 'translateY(26px)';
+        el.style.filter = 'blur(8px)';
+        el.style.willChange = 'opacity, transform';
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        el.style.transition = 'opacity 1s cubic-bezier(.2,.7,.2,1) ' + d + 'ms, transform 1.1s cubic-bezier(.2,.7,.2,1) ' + d + 'ms, filter 1.1s ease ' + d + 'ms';
+        toObserve.push(el);
+      }
+    });
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if(e.isIntersecting){
+          const el = e.target;
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+          el.style.filter = 'none';
+          this.io.unobserve(el);
+          this.fireExtras(el);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -7% 0px' });
+    toObserve.forEach((el) => this.io.observe(el));
+  }
+
+  fireExtras(el){
+    if(el.hasAttribute('data-count')) this.animateCount(el);
+    const cs = el.querySelectorAll ? el.querySelectorAll('[data-count]') : [];
+    [].slice.call(cs).forEach((c) => this.animateCount(c));
+    const ps = el.querySelectorAll ? el.querySelectorAll('[data-progress]') : [];
+    [].slice.call(ps).forEach((p) => { p.style.width = p.getAttribute('data-progress'); });
+  }
+
+  animateCount(el){
+    if(el._counted) return;
+    el._counted = true;
+    const target = parseFloat(el.getAttribute('data-count'));
+    if(isNaN(target)) return;
+    const dec = parseInt(el.getAttribute('data-decimals') || '0', 10);
+    const suf = el.getAttribute('data-suffix') || '';
+    const pre = el.getAttribute('data-prefix') || '';
+    if(this.reduced){ el.textContent = pre + target.toFixed(dec) + suf; return; }
+    const dur = 1500;
+    const start = performance.now();
+    const ease = (x) => 1 - Math.pow(1 - x, 3);
+    const step = (now) => {
+      let t = Math.min(1, (now - start) / dur);
+      const v = target * ease(t);
+      el.textContent = pre + v.toFixed(dec) + suf;
+      if(t < 1) requestAnimationFrame(step);
+      else el.textContent = pre + target.toFixed(dec) + suf;
+    };
+    requestAnimationFrame(step);
+  }
+
+  initInteractions(){
+    const r = this.root;
+    r.addEventListener('click', (e) => {
+      const a = e.target.closest('[data-action]');
+      if(!a) return;
+      const act = a.getAttribute('data-action');
+      if(act === 'open-modal') this.toggleModal(true);
+      else if(act === 'close-modal') this.toggleModal(false);
+      else if(act === 'tab') this.switchTab(a.getAttribute('data-tab'));
+      else if(act === 'accordion') this.toggleAcc(a);
+      else if(act === 'navmenu') this.toggleNav();
+    });
+    [].slice.call(r.querySelectorAll('#hzn-navmenu a')).forEach((a) => a.addEventListener('click', () => { const p = document.getElementById('hzn-navmenu'); if(p && p.getAttribute('data-open') === '1') this.toggleNav(); }));
+    [].slice.call(r.querySelectorAll('[data-tip-trigger]')).forEach((t) => {
+      const tip = t.querySelector('[data-tip]');
+      if(!tip) return;
+      const show = () => { tip.style.opacity = '1'; tip.style.transform = 'translateX(-50%) translateY(0)'; };
+      const hide = () => { tip.style.opacity = '0'; tip.style.transform = 'translateX(-50%) translateY(6px)'; };
+      t.addEventListener('mouseenter', show);
+      t.addEventListener('mouseleave', hide);
+      t.addEventListener('focus', show);
+      t.addEventListener('blur', hide);
+    });
+    [].slice.call(r.querySelectorAll('[data-toggle]')).forEach((sw) => {
+      sw.addEventListener('click', () => this.setToggle(sw, sw.getAttribute('data-on') !== '1'));
+    });
+  }
+
+  initSpotlight(){
+    const cards = [].slice.call(this.root.querySelectorAll('[style*="backdrop-filter"]')).filter((el) => el.offsetWidth >= 200 && el.offsetHeight >= 110 && el.id !== 'hzn-nav');
+    cards.forEach((el) => {
+      if(getComputedStyle(el).position === 'static') el.style.position = 'relative';
+      this.injectSpot(el);
+      if(el._spotBound) return;
+      el._spotBound = true;
+      el.addEventListener('pointerenter', () => el.style.setProperty('--spot', '1'));
+      el.addEventListener('pointerleave', () => el.style.setProperty('--spot', '0'));
+      el.addEventListener('pointermove', (e) => {
+        const r = el.getBoundingClientRect();
+        el.style.setProperty('--mx', (((e.clientX - r.left) / r.width) * 100).toFixed(1) + '%');
+        el.style.setProperty('--my', (((e.clientY - r.top) / r.height) * 100).toFixed(1) + '%');
+      });
+    });
+  }
+
+  injectSpot(el){
+    if(el.querySelector(':scope > [data-hzn-spot]')) return;
+    const br = getComputedStyle(el).borderRadius || '20px';
+    const base = 'position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:var(--spot,0);z-index:2;border-radius:' + br + ';';
+    const spot = document.createElement('div');
+    spot.setAttribute('data-hzn-spot', '');
+    spot.style.cssText = base + 'transition:opacity .45s;background:radial-gradient(230px circle at var(--mx,50%) var(--my,50%), rgba(214,226,255,0.13), transparent 46%);';
+    const ring = document.createElement('div');
+    ring.setAttribute('data-hzn-spot', '');
+    ring.style.cssText = base + 'transition:opacity .6s;background:conic-gradient(from var(--rot,0deg) at var(--mx,50%) var(--my,50%), rgba(150,175,255,0), rgba(200,215,255,0.17), rgba(150,175,255,0) 42%);animation:hzn-rot 6s linear infinite;';
+    el.appendChild(spot);
+    el.appendChild(ring);
+  }
+
+  toggleNav(){
+    const p = document.getElementById('hzn-navmenu');
+    if(!p) return;
+    const open = p.getAttribute('data-open') === '1';
+    if(open){ p.style.opacity = '0'; p.style.transform = 'translateY(-8px)'; p.style.pointerEvents = 'none'; p.setAttribute('data-open', '0'); }
+    else { p.style.opacity = '1'; p.style.transform = 'translateY(0)'; p.style.pointerEvents = 'auto'; p.setAttribute('data-open', '1'); }
+  }
+
+  toggleModal(open){
+    const m = document.getElementById('hzn-modal');
+    if(!m) return;
+    const card = m.querySelector('[data-modal-card]');
+    if(open){
+      m.style.display = 'flex';
+      requestAnimationFrame(() => {
+        m.style.opacity = '1';
+        if(card){ card.style.opacity = '1'; card.style.transform = 'translateY(0) scale(1)'; }
+      });
+    } else {
+      m.style.opacity = '0';
+      if(card){ card.style.opacity = '0'; card.style.transform = 'translateY(14px) scale(0.98)'; }
+      setTimeout(() => { m.style.display = 'none'; }, 420);
+    }
+  }
+
+  switchTab(id){
+    const r = this.root;
+    [].slice.call(r.querySelectorAll('[data-tab-btn]')).forEach((b) => {
+      const on = b.getAttribute('data-tab') === id;
+      b.style.color = on ? '#F6F7FB' : 'rgba(246,247,251,0.5)';
+      b.style.borderColor = on ? 'rgba(246,247,251,0.5)' : 'rgba(246,247,251,0.12)';
+      b.style.background = on ? 'rgba(246,247,251,0.06)' : 'transparent';
+    });
+    [].slice.call(r.querySelectorAll('[data-tab-panel]')).forEach((p) => {
+      p.style.display = p.getAttribute('data-tab') === id ? 'block' : 'none';
+    });
+  }
+
+  toggleAcc(btn){
+    const item = btn.closest('[data-acc-item]');
+    if(!item) return;
+    const panel = item.querySelector('[data-acc-panel]');
+    const ico = btn.querySelector('[data-acc-ico]');
+    const open = item.getAttribute('data-open') === '1';
+    if(open){
+      panel.style.maxHeight = '0px';
+      panel.style.opacity = '0';
+      item.setAttribute('data-open', '0');
+      if(ico) ico.style.transform = 'rotate(0deg)';
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.opacity = '1';
+      item.setAttribute('data-open', '1');
+      if(ico) ico.style.transform = 'rotate(45deg)';
+    }
+  }
+
+  setToggle(sw, on){
+    sw.setAttribute('data-on', on ? '1' : '0');
+    const knob = sw.querySelector('[data-knob]');
+    sw.style.background = on ? 'rgba(246,247,251,0.9)' : 'rgba(246,247,251,0.10)';
+    sw.style.borderColor = on ? 'rgba(246,247,251,0.9)' : 'rgba(246,247,251,0.2)';
+    if(knob){ knob.style.transform = on ? 'translateX(20px)' : 'translateX(0)'; knob.style.background = on ? '#06070C' : '#F6F7FB'; }
+  }
+
+  bindScroll(){
+    const nav = document.getElementById('hzn-nav');
+    const bar = document.getElementById('hzn-progress');
+    this._onScroll = () => {
+      const y = window.scrollY || window.pageYOffset || 0;
+      if(bar){
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = (h > 0 ? Math.min(1, y / h) * 100 : 0).toFixed(2) + '%';
+      }
+      if(nav){
+        if(y > 40){
+          nav.style.background = 'rgba(6,7,12,0.62)';
+          nav.style.backdropFilter = 'blur(20px)';
+          nav.style.webkitBackdropFilter = 'blur(20px)';
+          nav.style.borderColor = 'rgba(246,247,251,0.10)';
+          nav.style.paddingTop = '12px';
+          nav.style.paddingBottom = '12px';
+        } else {
+          nav.style.background = 'transparent';
+          nav.style.backdropFilter = 'none';
+          nav.style.webkitBackdropFilter = 'none';
+          nav.style.borderColor = 'transparent';
+          nav.style.paddingTop = '18px';
+          nav.style.paddingBottom = '18px';
+        }
+      }
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+
+  loop(t){
+    this.raf = requestAnimationFrame(this.loop);
+    const ctx = this.ctx;
+    if(!ctx) return;
+    const sc = window.scrollY || window.pageYOffset || 0;
+    const time = t * 0.001;
+    ctx.clearRect(0, 0, this.vw, this.vh);
+    const drift = this.reduced ? 0 : this.cfg.pMul;
+    for(let i=0;i<this.stars.length;i++){
+      const s = this.stars[i];
+      const par = sc * s.z * 0.12 * drift;
+      let y = (s.y - par) % this.fieldH;
+      if(y < 0) y += this.fieldH;
+      if(y > this.vh + 6) continue;
+      const tw = this.reduced ? 0.85 : (0.55 + 0.45 * Math.sin(time * s.ts + s.tw));
+      const col = s.warm ? '236,226,210' : '226,234,255';
+      if(s.bright){
+        const a = this.starOp * tw;
+        ctx.globalAlpha = a * 0.15; ctx.beginPath(); ctx.arc(s.x, y, s.r * 4.5, 0, 6.283); ctx.fillStyle = 'rgb(' + col + ')'; ctx.fill();
+        ctx.globalAlpha = a * 0.30; ctx.beginPath(); ctx.arc(s.x, y, s.r * 2.1, 0, 6.283); ctx.fill();
+        ctx.globalAlpha = Math.min(1, a * 1.15); ctx.beginPath(); ctx.arc(s.x, y, s.r, 0, 6.283); ctx.fillStyle = '#ffffff'; ctx.fill();
+      } else {
+        ctx.globalAlpha = this.starOp * s.z * tw;
+        ctx.beginPath(); ctx.arc(s.x, y, s.r, 0, 6.283); ctx.fillStyle = 'rgb(' + col + ')'; ctx.fill();
+      }
+    }
+    ctx.globalAlpha = 1;
+    if(!this.reduced && this.cfg.pMul > 0 && this.pEls){
+      const mid = sc + this.vh / 2;
+      for(let i=0;i<this.pEls.length;i++){
+        const p = this.pEls[i];
+        const off = (mid - p.top) * p.k * this.cfg.pMul;
+        p.el.style.transform = 'translate3d(0,' + off.toFixed(1) + 'px,0)';
+      }
+    }
+  }
+}
+
+window.__hznBoot = function(){ try { new HznComponent().componentDidMount(); } catch(e){ console.error('HORIZON runtime:', e); } };
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', window.__hznBoot);
+else window.__hznBoot();
+</script>
+</body>
+</html>
