@@ -109,6 +109,8 @@ img,canvas,svg,video{max-width:100%}
 
 
 
+
+
 /* --- rework additions --- */
 @keyframes hzn-sunglow{0%,100%{opacity:0.78;filter:brightness(0.9)}50%{opacity:1;filter:brightness(1.28)}}
 @keyframes hzn-sweep{0%{transform:translateX(-120%)}55%,100%{transform:translateX(360%)}}
@@ -171,13 +173,13 @@ img,canvas,svg,video{max-width:100%}
   <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;">
     <div data-reveal style="display:inline-flex;align-items:center;gap:12px;font:500 12px/1 'Space Grotesk',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,247,251,0.62);"><span style="width:26px;height:1px;background:rgba(246,247,251,0.56);"></span>AI-Native Business Consulting</div>
     <h1 data-reveal data-reveal-delay="120" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(50px,9vw,140px);line-height:0.95;letter-spacing:-0.012em;color:#F6F7FB;margin:22px 0 0;text-shadow:0 0 80px rgba(214,226,255,0.28);max-width:15ch;text-wrap:balance;">The AI Brain behind your business.</h1>
-    <p data-reveal data-reveal-delay="230" style="font:400 clamp(17px,1.6vw,22px)/1.6 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.76);max-width:640px;margin:28px auto 0;">The intelligence layer wired into every tool you run — and operated entirely from Claude and ChatGPT. Ask a question, it answers from your live data. Give an instruction, it acts.</p>
-    <div data-reveal data-reveal-delay="360" style="margin-top:34px;width:min(620px,94vw);background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:22px;border-radius:20px;padding:18px 22px;display:flex;align-items:flex-start;gap:14px;text-align:left;">
+    <p data-reveal data-reveal-delay="230" style="font:400 clamp(16px,1.5vw,21px)/1.62 'Space Grotesk',sans-serif;color:rgba(246,247,251,0.74);max-width:600px;margin:26px auto 0;">Just ask your business — in plain English, inside Claude and ChatGPT. It answers from your live numbers, and does the work. You approve every move.</p>
+    <div data-reveal data-reveal-delay="360" style="margin-top:34px;width:min(640px,94vw);background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(246,247,251,0.012) 62%);-webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.16),0 30px 70px -52px rgba(0,0,0,0.85);border:1px solid rgba(246,247,251,0.10);border-radius:22px;border-radius:20px;padding:18px 22px;display:flex;align-items:flex-start;gap:14px;text-align:left;">
       <span data-anim style="flex:none;margin-top:6px;width:9px;height:9px;border-radius:50%;background:#F6F7FB;box-shadow:0 0 12px 2px rgba(246,247,251,0.85);animation:hzn-pulse 4s ease-in-out infinite;"></span>
       <div style="flex:1;min-width:0;">
-        <span style="font:600 10px 'Space Grotesk';letter-spacing:.18em;text-transform:uppercase;color:rgba(246,247,251,0.56);">You, in Claude / ChatGPT</span>
-        <div id="hzn-ask" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,1.9vw,21px);color:#F6F7FB;margin-top:5px;transition:opacity .4s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">“Which invoices are overdue this week?”</div>
-        <div id="hzn-act" style="display:flex;align-items:flex-start;gap:8px;margin-top:9px;transition:opacity .4s;"><span style="flex:none;color:rgba(160,185,255,0.95);font:600 12px 'Space Grotesk';">→ HORIZON</span><span id="hzn-actt" style="font:400 13.5px/1.45 'Space Grotesk';color:rgba(246,247,251,0.68);">3 flagged — reminder drafted in QuickBooks, ready to send.</span></div>
+        <span id="hzn-sector" style="font:600 10px 'Space Grotesk';letter-spacing:.18em;text-transform:uppercase;color:rgba(160,185,255,0.85);transition:opacity .4s;">Food distributor</span>
+        <div id="hzn-ask" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,1.9vw,21px);line-height:1.28;color:#F6F7FB;margin-top:6px;transition:opacity .4s;">“Six hours a day copying catch-weights into invoices.”</div>
+        <div id="hzn-act" style="display:flex;align-items:flex-start;gap:8px;margin-top:10px;padding-top:9px;border-top:1px solid rgba(246,247,251,0.1);transition:opacity .4s;"><span style="flex:none;color:rgba(160,185,255,0.95);font:600 12px 'Space Grotesk';">→ HORIZON</span><span id="hzn-actt" style="font:400 13.5px/1.45 'Space Grotesk';color:rgba(246,247,251,0.7);">Reconciled and invoiced automatically — your team’s free by 9am.</span></div>
       </div>
     </div>
     <div data-reveal data-reveal-delay="480" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:34px;">
@@ -297,6 +299,8 @@ img,canvas,svg,video{max-width:100%}
 
 </div>
 <script>
+
+
 
 
 
@@ -770,8 +774,8 @@ else window.__hznBoot();
 
 /* tab aria-selected sync (rework) */
 document.addEventListener('click',function(e){var b=e.target.closest('[role="tab"]');if(!b)return;var tl=b.closest('[role="tablist"]');if(tl)tl.querySelectorAll('[role="tab"]').forEach(function(t){t.setAttribute('aria-selected',t===b?'true':'false');});});
-/* hero: rotating live demo (question -> action) */
-(function(){var a=document.getElementById('hzn-ask'),ac=document.getElementById('hzn-actt'),w=document.getElementById('hzn-act');if(!a)return;var q=[{"ask":"Which invoices are overdue this week?","act":"3 flagged — reminder drafted in QuickBooks, ready to send."},{"ask":"How did last month’s ad spend perform?","act":"Tied to revenue in Stripe — 2 losing ad sets paused in Meta."},{"ask":"Any tables free Friday at 8 for the VIP?","act":"Held and confirmed over WhatsApp, logged in the PMS."},{"ask":"Which orders came in overnight?","act":"Read from email & WhatsApp — delivery notes made, books updated."},{"ask":"Who’s about to churn?","act":"3 at-risk accounts — save outreach drafted in HubSpot."}];var i=0;var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduce)return;setInterval(function(){a.style.opacity='0';if(w)w.style.opacity='0';setTimeout(function(){i=(i+1)%q.length;a.textContent='\u201C'+q[i].ask+'\u201D';if(ac)ac.textContent=q[i].act;a.style.opacity='1';if(w)w.style.opacity='1';},450);},4200);})();
+/* hero: rotating sector problem -> our fix (client language) */
+(function(){var sc=document.getElementById('hzn-sector'),a=document.getElementById('hzn-ask'),ac=document.getElementById('hzn-actt'),w=document.getElementById('hzn-act');if(!a)return;var q=[{"sector":"Food distributor","problem":"Six hours a day copying catch-weights into invoices.","fix":"Reconciled and invoiced automatically — your team’s free by 9am."},{"sector":"Boutique hotel","problem":"Four hours every night just to close the books.","fix":"Every folio reconciled and posted to your accounts by checkout."},{"sector":"Dental group","problem":"Empty chairs from no-shows and unbooked treatment plans.","fix":"Patients re-booked and reminded automatically over WhatsApp."},{"sector":"Property developer","problem":"Draw approvals stuck for days; budgets and books out of sync.","fix":"Every invoice matched to budget and flagged in minutes."},{"sector":"Online store","problem":"No idea which products actually make money after ad spend.","fix":"True per-product profit, live — and losing ads paused for you."},{"sector":"Professional firm","problem":"Proposals going cold and invoices slipping late.","fix":"Stalled deals chased and every won deal invoiced on time."}];var i=0;var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduce)return;setInterval(function(){a.style.opacity='0';if(w)w.style.opacity='0';if(sc)sc.style.opacity='0';setTimeout(function(){i=(i+1)%q.length;if(sc)sc.textContent=q[i].sector;a.textContent='\u201C'+q[i].problem+'\u201D';if(ac)ac.textContent=q[i].fix;a.style.opacity='1';if(w)w.style.opacity='1';if(sc)sc.style.opacity='1';},450);},4200);})();
 /* deep-space nebula (WebGL) */
 /* HORIZON — interactive deep-space nebula (WebGL, subtle). Falls back to CSS blobs if unavailable. */
 (function(){
